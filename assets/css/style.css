@@ -15,7 +15,7 @@ body {
   background-color: lightgray;
 }
 .jumbotron {
-  background-image: url("/Users/abc/Desktop/Code/HW/unit-4-game/assets/images/macro-crystal-facebook-cover-timeline-banner-for-fb.jpg");
+  background-image: url("../images/macro-crystal-facebook-cover-timeline-banner-for-fb.jpg");
   background-size: cover;
   width: 100%;
   color: black;
