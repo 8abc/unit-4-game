@@ -8,12 +8,11 @@
   align-items: center;
 }
 body {
-  background: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  color: grey;
+  color: black;
   font-size: 15px;
-  background-image: url("");
+  background-color: lightgray;
 }
 .jumbotron {
   background-image: url("/Users/abc/Desktop/Code/HW/unit-4-game/assets/images/macro-crystal-facebook-cover-timeline-banner-for-fb.jpg");
@@ -25,4 +24,8 @@ body {
 p {
   font-size: 24px;
   font-weight: bold;
+  border: solid, black;
+}
+footer {
+  margin-top: 80px;
 }
