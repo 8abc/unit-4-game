@@ -1,0 +1,28 @@
+.crystals {
+  display: flex;
+  justify-content: space-around;
+}
+.crystal-image {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+body {
+  background: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+  background-image: url("");
+}
+.jumbotron {
+  background-image: url("/Users/abc/Desktop/Code/HW/unit-4-game/assets/images/macro-crystal-facebook-cover-timeline-banner-for-fb.jpg");
+  background-size: cover;
+  width: 100%;
+  color: black;
+  font-weight: 100%;
+}
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
