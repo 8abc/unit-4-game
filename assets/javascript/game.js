@@ -6,17 +6,36 @@ var wins = 0;
 var lost = 0;
 //Create something to track your score
 var yourScore = 0;
+//crystal variables
+var crystals = {
+  blue: {
+    name: "blue",
+    value: 0
+  },
+  red: {
+    name: "red",
+    value: 0
+  },
+  onyx: {
+    name: "onyx",
+    value: 0
+  },
+  green: {
+    name: "green",
+    value: 0
+  }
+};
 $(document).ready(function() {
   startGame();
 
   // Create number to guess
   function getnewRandomnumbers() {
     yourScore = 0;
-    $("#yourScore").html("<h3> Your Score: </h3>" + yourScore);
+    $("#yourScore").html(yourScore);
     //set a random number between 19-120 for the number to guess
     randomNum = Math.floor(Math.random() * 102) + 19;
     //Put the number to guess on the screen
-    $("#result").html("<h3>Number to Guess: </h3>" + randomNum);
+    $("#result").html(+randomNum);
 
     //Go through each crystal image class
     $(".crystal-image").each(function() {
@@ -36,7 +55,7 @@ $(document).ready(function() {
   }
   function winner() {
     wins = wins++;
-    $("#wins").html("Wins: " + wins);
+    $("#wins").html(+wins);
     alert("YOU WIN!");
     $("#yourScore").html(yourScore);
     console.log("YOU WIN");
@@ -44,7 +63,7 @@ $(document).ready(function() {
   }
   function loser() {
     losses = lost++;
-    $("#losses").html("Losses: " + lost);
+    $("#losses").html(+lost);
     alert("You lost, try again. Good luck!");
     $("#yourScore").html(yourScore);
     console.log("You lost");
@@ -54,7 +73,8 @@ $(document).ready(function() {
   //When a crystal image gets clicked
   $(".crystal-image").on("click", function() {
     //Grabbing the random number to the crystal
-    var crystalValue = $(this).attr("data-random");
+    var crystalValue = parseInt($(this).attr("data-random"));
+    console.log(typeof crystalValue);
     //Add crystal value to score
     yourScore += crystalValue;
     //Check if it's a win or loss after this click
@@ -64,7 +84,7 @@ $(document).ready(function() {
       loser();
     } else {
       //Put your score on the screen
-      $("#yourScore").html("Your New Score: " + yourScore);
+      $("#yourScore").html(+yourScore);
       console.log("Your new Score: " + yourScore);
     }
   });

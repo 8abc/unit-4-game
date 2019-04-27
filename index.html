@@ -6,57 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Crystal Collector Game</title>
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container">
-      <div class="jumbotron jumbotron-fluid">
+      <div class="jumbotron jumbotron-fluid bg-dark text-white">
           <div class="container">
-            <h1 class="text-center">Crystal Collector Game</h1>
+            <!-- The title of the game -->
+            <h1 class="display-4">Crystal Collector Game</h1>
 
-            <h2 class="text-center">How to Play</h2>
+            <h2 class="lead">How to Play</h2>
             
-            <p class="text-center">You will be given a random number at the begining of the game.  The goal of the game is to match your score to that number. </p>
+            <p class="lead">You will be given a random number at the begining of the game.  The goal of the game is to match your score to that number. </p>
               
-            <p class="text-center">You can add points to your score by clicking on one of the crystals. Each crystal has a different value to add to your score. Be careful! If you go past the random number amount, you will lose.</p>
+            <p class="lead">You can add points to your score by clicking on one of the crystals. Each crystal has a different value to add to your score. Be careful! If you go past the random number amount, you will lose.</p>
           </div>
         </div>
-         
+
+      <div class="row">
+        <div class="col-md-3">
         </div>
-  
-
-
-          <p id="result"></p> 
-          
-          <p class="wins"></p>
-          <p class="losses"></p>
-           
+      </div class="col-md-3">
+        <ul class="list-group">
+          <li class="list-group-item bg-dark text-white"><h3>Target Score: <span id="result"></span></h3></li>
+          <li class="list-group-item bg-dark text-white"><h3>Your Total Score: <span id="yourScore"></span></h3></li>
+        </ul>
+      </div>
+      </div class="col-md-3">
+        <ul class="list-group">
+          <li class="list-group-item bg-dark text-white"><h3>Wins: <span id="wins"></span></h3></li>
+          <li class="list-group-item bg-dark text-white"><h3>Losses: <span id="losses"></span></h3></li>
+        </ul>
+      </div>
+<br>
+<br>
+    <div class="crystals row text-center">
+      <div class="col-md-3">
+         <img class="crystal-image" id="blue" src="./assets/images/blueGem.png">
+      </div>  
+      <div class="col-md-3">
+        <img class ="crystal-image" id="green" src="./assets/images/greenGems.png">
+      </div>  
+       <div class="col-md-3">
+          <img class ="crystal-image" id="onyx" src="./assets/images/onyxGem.png">
+      </div>  
+      <div class="col-md-3">
+        <img class ="crystal-image" id="red" src="./assets/images/redGem.png">
+      </div>  
+<br>
+<br>
+    <div class="static-bottom">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card bg-dark text-white">
+            <div class="card-body text-center">
+                Copyright &copy; 2019 Anadelaine Catalla
+            </div>
           </div>
-
-          <p id="yourScore"></div>
-            
-           </div>
-
-          <div class="crystals">
-            <img class="crystal-image" id="blue" src="./assets/images/blueGem.jpeg">
-            <img class ="crystal-image" id="green" src="./assets/images/greenGems.jpeg">
-            <img class ="crystal-image" id="onyx" src="./assets/images/onyxGem.jpg">
-            <img class ="crystal-image" id="red" src="./assets/images/redGem.jpg">
-          </div>
-        </p>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-      <div class="footer text-center">
-        Anadelaine Catalla &copy; 2019
-      </div>
-    </footer>
-  </body>
-  <script type="text/javascript" src="./assets/javascript/game.js"></script>
+ </div>  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
 </html>

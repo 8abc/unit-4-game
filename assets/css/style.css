@@ -5,14 +5,12 @@
 .crystal-image {
   height: 100px;
   width: 100px;
-  align-items: center;
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   color: black;
   font-size: 15px;
-  background-color: lightgray;
 }
 .jumbotron {
   background-image: url("../images/macro-crystal-facebook-cover-timeline-banner-for-fb.jpg");
@@ -26,6 +24,12 @@ p {
   font-weight: bold;
   border: solid, black;
 }
-footer {
-  margin-top: 80px;
+.card-body {
+  margin-top: 5px;
+  padding: 3px;
+}
+.list-group-item {
+  margin: 5px;
+  height: 50%;
+  width: 50%;
 }
